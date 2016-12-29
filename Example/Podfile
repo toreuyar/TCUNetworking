@@ -1,0 +1,12 @@
+use_frameworks!
+
+target 'TCUNetworking_Example' do
+  pod 'TCUNetworking', :path => '../'
+
+  target 'TCUNetworking_Tests' do
+    inherit! :search_paths
+
+    pod 'Specta'
+  pod 'Expecta'
+  end
+end
