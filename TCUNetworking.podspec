@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'TCUNetworking'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of TCUNetworking.'
+  s.summary          = "Helper classes for networking on Objective-C, iOS."
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,14 +18,14 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+Helper classes for boiler plate codes while building remote procedure proxy architecture on Objective-C, iOS.
                        DESC
 
-  s.homepage         = 'https://github.com/<GITHUB_USERNAME>/TCUNetworking'
+  s.homepage         = 'https://github.com/toreuyar/TCUNetworking'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Töre Çağrı Uyar' => 'mail@toreuyar.net' }
-  s.source           = { :git => 'https://github.com/<GITHUB_USERNAME>/TCUNetworking.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/toreuyar/TCUNetworking.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
@@ -37,6 +37,8 @@ TODO: Add long description of the pod here.
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.frameworks = 'UIKit', 'MapKit', 'Foundation'
+  s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'TCUTools', '~> 3.0'
+
 end
